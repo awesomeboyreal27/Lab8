@@ -1,5 +1,6 @@
 #ifndef ARMOR_H
 #define ARMOR_H
+using namespace std;
 class Armor {
 private:
     string name;
