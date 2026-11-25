@@ -3,13 +3,13 @@
 using namespace std;
     Armor::Armor(){
         name = "unlisted";
-        attackPower = 1;
+        armor = 1;
         durability = 1;
         price = 1;
     }
     Armor::Armor(string newName){
         name = newName;
-        attackPower = 1;
+        armor = 1;
         durability = 1;
         price = 1;
     }
@@ -19,10 +19,10 @@ using namespace std;
     void Armor::updateName(string newName){
         name = newName;
     }
-    int Armor::armor(){
+    int Armor::showArmor(){
         return armor;
     }
-    void Armor::armor(int newArmor){
+    void Armor::updateArmor(int newArmor){
         armor = newArmor;
     }
     int Armor::showDurability(){
