@@ -1,3 +1,11 @@
+/////////////////////////////////////////////////////////////////////
+// Name: Jacob Cantu and Kristin Suarez
+// Date: 11/25/26
+// Class: CSCI 1470.0X
+// Semester: Fall 2026
+// CSCI 1470 Instructor: Dr. Jonatan Reyes
+// Program Description: This program is a game using classes called Sword Quest.
+/////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <vector>
 #include "gamecharacter.h"
@@ -40,7 +48,7 @@ int main(){
     bool console = true;
     char consolechoice;
 
-    cout << "1. Create a hero" << endl;
+    cout << "1. Create a hero" << endl; // initial menu to make an object
     cout << "2. Exit" << endl;
     cout << "Enter your choice: ";
     cin >> choice;
@@ -62,8 +70,8 @@ int main(){
     }
     
     
-    GameCharacter hero;
-    hero.updateName(name);
+    GameCharacter hero; // creation
+    hero.updateName(name); // add in name
     hero.updateHealth(100);
     hero.updateattackPower(10);
     hero.updateGold(0);
@@ -121,7 +129,7 @@ if (choice == 1){
         cout << endl;
     
 
-        if (cin.fail()){
+        if (cin.fail()){ // to prevent input issues
             cin.clear();
             cin.ignore(1000, '\n');
             cout << "Invalid input. Please enter a number." << endl;
