@@ -37,7 +37,11 @@ int GameCharacter::showHealth() const {
    return health;
 }
 void GameCharacter::updateHealth(int newHealth){
-   health = newHealth;
+   if (newHealth < 0){
+        health = 0;
+    } else{
+        health = newHealth;
+    }
 }
 int GameCharacter::showattackPower() const { //const makes it read only
    return attackPower;
